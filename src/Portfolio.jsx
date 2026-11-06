@@ -136,10 +136,7 @@ const Portfolio = () => {
           <div style={styles.workCard}>
             <div style={styles.cardHeader}>
               <div style={styles.logoWrapper}>
-                <svg width="60" height="60" viewBox="0 0 100 100" style={styles.logo}>
-                  <rect width="100" height="100" fill="#ff00ff" rx="12"/>
-                  <text x="50" y="68" fill="#000" fontSize="52" fontWeight="900" textAnchor="middle" fontFamily="Space Grotesk">C</text>
-                </svg>
+                <img src="/logos/cursis.ico" alt="Cursis" style={styles.companyLogo} />
               </div>
               <div style={styles.headerText}>
                 <h4 style={styles.companyName}>CURSIS</h4>
@@ -175,10 +172,7 @@ const Portfolio = () => {
           <div style={styles.workCard}>
             <div style={styles.cardHeader}>
               <div style={styles.logoWrapper}>
-                <svg width="60" height="60" viewBox="0 0 100 100" style={styles.logo}>
-                  <rect width="100" height="100" fill="#00ff00" rx="12"/>
-                  <text x="50" y="68" fill="#000" fontSize="52" fontWeight="900" textAnchor="middle" fontFamily="Space Grotesk">L</text>
-                </svg>
+                <img src="/logos/lakai.ico" alt="Lakai.pro" style={styles.companyLogo} />
               </div>
               <div style={styles.headerText}>
                 <h4 style={styles.companyName}>LAKAI.PRO</h4>
@@ -325,9 +319,15 @@ const styles = {
   logoWrapper: {
     flexShrink: 0,
   },
-  logo: {
+  companyLogo: {
+    width: '60px',
+    height: '60px',
     display: 'block',
+    border: '4px solid #ffffff',
     boxShadow: '6px 6px 0 #000',
+    background: '#ffffff',
+    padding: '8px',
+    borderRadius: '8px',
   },
   headerText: {
     flex: 1,

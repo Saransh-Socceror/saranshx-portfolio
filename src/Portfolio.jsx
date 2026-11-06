@@ -134,6 +134,18 @@ const Portfolio = () => {
         <div style={styles.workGrid} className="work-grid">
           {/* Cursis Card */}
           <div style={styles.workCard}>
+            <div style={styles.cardHeader}>
+              <div style={styles.logoWrapper}>
+                <svg width="60" height="60" viewBox="0 0 100 100" style={styles.logo}>
+                  <rect width="100" height="100" fill="#ff00ff" rx="12"/>
+                  <text x="50" y="68" fill="#000" fontSize="52" fontWeight="900" textAnchor="middle" fontFamily="Space Grotesk">C</text>
+                </svg>
+              </div>
+              <div style={styles.headerText}>
+                <h4 style={styles.companyName}>CURSIS</h4>
+                <p style={styles.companyTagline}>Launch animation that converts</p>
+              </div>
+            </div>
             <div
               className="video-container"
               style={styles.videoWrapper}
@@ -157,14 +169,22 @@ const Portfolio = () => {
                 </div>
               )}
             </div>
-            <div style={styles.cardInfo}>
-              <h4 style={styles.companyName}>CURSIS</h4>
-              <p style={styles.companyDesc}>Launch animation that converts</p>
-            </div>
           </div>
 
           {/* Lakai Card */}
           <div style={styles.workCard}>
+            <div style={styles.cardHeader}>
+              <div style={styles.logoWrapper}>
+                <svg width="60" height="60" viewBox="0 0 100 100" style={styles.logo}>
+                  <rect width="100" height="100" fill="#00ff00" rx="12"/>
+                  <text x="50" y="68" fill="#000" fontSize="52" fontWeight="900" textAnchor="middle" fontFamily="Space Grotesk">L</text>
+                </svg>
+              </div>
+              <div style={styles.headerText}>
+                <h4 style={styles.companyName}>LAKAI.PRO</h4>
+                <p style={styles.companyTagline}>Motion that drives action</p>
+              </div>
+            </div>
             <div
               className="video-container"
               style={styles.videoWrapper}
@@ -187,10 +207,6 @@ const Portfolio = () => {
                   </svg>
                 </div>
               )}
-            </div>
-            <div style={styles.cardInfo}>
-              <h4 style={styles.companyName}>LAKAI.PRO</h4>
-              <p style={styles.companyDesc}>Motion that drives action</p>
             </div>
           </div>
         </div>
@@ -294,6 +310,42 @@ const styles = {
   },
   workCard: {
     background: '#000000',
+    border: '6px solid #ffffff',
+    boxShadow: '16px 16px 0 #000',
+    padding: '32px',
+  },
+  cardHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '24px',
+    marginBottom: '32px',
+    paddingBottom: '24px',
+    borderBottom: '4px solid #ffffff',
+  },
+  logoWrapper: {
+    flexShrink: 0,
+  },
+  logo: {
+    display: 'block',
+    boxShadow: '6px 6px 0 #000',
+  },
+  headerText: {
+    flex: 1,
+  },
+  companyName: {
+    fontSize: 'clamp(32px, 4vw, 48px)',
+    fontWeight: 900,
+    letterSpacing: '2px',
+    color: '#ff00ff',
+    marginBottom: '8px',
+    lineHeight: '1',
+  },
+  companyTagline: {
+    fontSize: '18px',
+    fontWeight: 800,
+    color: '#ffffff',
+    letterSpacing: '0.5px',
+    opacity: 0.9,
   },
   videoWrapper: {
     position: 'relative',
@@ -303,7 +355,6 @@ const styles = {
     border: '6px solid #ffffff',
     boxShadow: '16px 16px 0 #000',
     background: '#000000',
-    marginBottom: '32px',
   },
   video: {
     width: '100%',
@@ -318,22 +369,6 @@ const styles = {
     transform: 'translate(-50%, -50%)',
     pointerEvents: 'none',
     opacity: 0.9,
-  },
-  cardInfo: {
-    textAlign: 'left',
-  },
-  companyName: {
-    fontSize: 'clamp(36px, 5vw, 64px)',
-    fontWeight: 900,
-    letterSpacing: '3px',
-    color: '#ff00ff',
-    marginBottom: '12px',
-  },
-  companyDesc: {
-    fontSize: '20px',
-    fontWeight: 800,
-    color: '#ffffff',
-    letterSpacing: '1px',
   },
 
   // Footer
